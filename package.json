@@ -2,14 +2,18 @@
   "name": "express-as-library",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./example/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sample": "nodemon ./example/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "custom-error-exceptions": "^1.2.3",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
   }
 }
