@@ -1,4 +1,4 @@
-const homeHandler = (req, res) => {
+const homeHandler = async (req, res) => {
     res.send('Hello World!')
 }
 
