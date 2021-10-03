@@ -1,11 +1,10 @@
 const homeHandler = async (req, res) => {
-    const { AssetModel } = res.locals;
+    const { SiswaDbConnector } = res.locals;
     const dbPayload = {
-        title: 'Lorem Ipsum',
-        slug: 'lorem-ipsum'
+        nama: 'lorem-ipsum'
       };
-    const saveCategory = await AssetModel.insertOne(dbPayload);
-    res.send(saveCategory)
+    const user = await SiswaDbConnector.insert(dbPayload);
+    res.send(user.dataValues)
 }
 
 module.exports = homeHandler;
