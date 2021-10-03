@@ -1,3 +1,5 @@
+const NewsModel = require('./newsModel');
+
 const models = [
   {
     name: "UserModel",
@@ -6,6 +8,10 @@ const models = [
   {
     name: "AssetModel",
     collection: "assets",
+  },
+  {
+    name: "NewsModel",
+    model: NewsModel
   },
 ];
 
