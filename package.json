@@ -4,7 +4,8 @@
   "description": "",
   "main": "./example/index.js",
   "scripts": {
-    "sample": "nodemon ./example/index.js"
+    "sample:mongo": "nodemon ./example/index-mongo.js",
+    "sample:sequelize": "nodemon ./example/index-sequelize.js"
   },
   "keywords": [],
   "author": "",

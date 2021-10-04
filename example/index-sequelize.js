@@ -1,17 +1,6 @@
 const { CreateServer } = require('../lib');
 const routers = require('./routes');
-// const models = require('./models');
-
-const models = require('./models/sequelizeModel');
-
-// const dbConfig = {
-//     instances: 'localhost:27017',
-//     options: '',
-//     username: '',
-//     password: '',
-//     database: 'Sekolah',
-//     dialect: 'mongodb'
-// };
+const models = require('./models/sequelize/sequelizeModel');
 
 const dbConfig = {
     host: 'localhost',

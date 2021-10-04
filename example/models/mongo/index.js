@@ -1,4 +1,4 @@
-const NewsModel = require('./newsModel');
+const NilaiModel = require('./nilaiModel');
 
 const models = [
   {
@@ -11,7 +11,7 @@ const models = [
   },
   {
     name: "NewsModel",
-    model: NewsModel
+    model: NilaiModel
   },
 ];
 
