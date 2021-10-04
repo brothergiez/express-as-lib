@@ -16,6 +16,14 @@ const routers = [
         path: '/nilai', 
         method: 'GET',
         handler: sequelizeOthersHandler
+    },
+    { 
+        path: '/', 
+        method: 'GET',
+        handler: (req, res) => {
+            const message = 'Hello World! this page with no db called';
+            res.send(message);
+        }
     }
 ];
 
