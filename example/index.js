@@ -34,4 +34,5 @@ const config = {
 
 const createSever = new CreateServer({ routers, config, models });
 const app = createSever.init();
+app.locals.info = { info: 'ok' };
 createSever.start();
