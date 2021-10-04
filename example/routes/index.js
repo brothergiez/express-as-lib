@@ -1,14 +1,14 @@
-const home = require('./home');
-const about = require('./about');
+const home = require('./mongo');
+const about = require('./sequelize');
 
 const routers = [
     { 
-        path: '/', 
+        path: '/mongo', 
         method: 'GET',
         handler: home
     },
     { 
-        path: '/about', 
+        path: '/sequelize', 
         method: 'GET',
         handler: about
     }
