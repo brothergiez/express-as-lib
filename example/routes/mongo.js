@@ -4,7 +4,7 @@ const mongoHandler = async (req, res) => {
     nama: "John Doe",
   };
   const user = await SiswaDbConnector.insertOne(dbPayload);
-  res.send(user.dataValues);
+  res.send(user);
 };
 
 module.exports = mongoHandler;
