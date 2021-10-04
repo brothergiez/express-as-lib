@@ -2,15 +2,11 @@ const NilaiModel = require('./nilaiModel');
 
 const models = [
   {
-    name: "UserModel",
-    collection: "users",
+    name: "SiswaDbConnector",
+    collection: "siswa",
   },
   {
-    name: "AssetModel",
-    collection: "assets",
-  },
-  {
-    name: "NewsModel",
+    name: "NilaiModel",
     model: NilaiModel
   },
 ];

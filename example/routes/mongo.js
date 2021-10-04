@@ -3,7 +3,7 @@ const mongoHandler = async (req, res) => {
   const dbPayload = {
     nama: "John Doe",
   };
-  const user = await SiswaDbConnector.insert(dbPayload);
+  const user = await SiswaDbConnector.insertOne(dbPayload);
   res.send(user.dataValues);
 };
 
