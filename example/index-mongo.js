@@ -12,8 +12,7 @@ const dbConfig = {
 };
 
 const config = {
-    dbConfig,
-    apiVersion: 1.0
+    dbConfig
 }
 
 const createServer = new CreateServer({ routers, config, models });
