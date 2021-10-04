@@ -1,4 +1,4 @@
-const { MongoBaseModel } = require('../../lib');
+const { MongoBaseModel } = require('../../../lib');
 
 const {
   errors: { CustomError },
