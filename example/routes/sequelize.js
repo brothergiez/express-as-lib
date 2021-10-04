@@ -5,6 +5,17 @@ const sequelizeHandler = async (req, res) => {
     };
     const user = await SiswaDbConnector.insert(dbPayload);
     res.send(user.dataValues)
-}
+};
 
-module.exports = sequelizeHandler;
+const sequelizeOthersHandler = async (req, res) => {
+    const { NilaiDbConnector } = res.locals;
+    const dbPayload = {
+        siswaId: 1,
+        nilai: 9
+    };
+    const nilai = await NilaiDbConnector.save(dbPayload);
+    res.send(nilai)
+};
+
+
+module.exports = {sequelizeHandler, sequelizeOthersHandler};

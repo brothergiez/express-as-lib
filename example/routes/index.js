@@ -1,5 +1,5 @@
 const mongo = require('./mongo');
-const sequelize = require('./sequelize');
+const { sequelizeHandler, sequelizeOthersHandler } = require('./sequelize');
 
 const routers = [
     { 
@@ -10,7 +10,12 @@ const routers = [
     { 
         path: '/sequelize', 
         method: 'GET',
-        handler: sequelize
+        handler: sequelizeHandler
+    },
+    { 
+        path: '/nilai', 
+        method: 'GET',
+        handler: sequelizeOthersHandler
     }
 ];
 
