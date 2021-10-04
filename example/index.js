@@ -32,7 +32,6 @@ const config = {
     apiVersion: 1.0
 }
 
-const createSever = new CreateServer({ routers, config, models });
-const app = createSever.init();
-app.locals.info = { info: 'ok' };
-createSever.start();
+const createServer = new CreateServer({ routers, config, models });
+const app = createServer.init();
+createServer.start();
